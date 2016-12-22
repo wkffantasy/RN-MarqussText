@@ -9,12 +9,13 @@ import {
 } from 'react-native';
 
 export default class MarqueeTextView extends Component {
+
   static propTypes = {
     title: PropTypes.string.isRequired,
     titleStyle: PropTypes.oneOfType([PropTypes.number, PropTypes.object, PropTypes.array]),
     style: PropTypes.oneOfType([PropTypes.number, PropTypes.object, PropTypes.array]),
     textMargin:PropTypes.number,//当文字过长时，两个Text的间距，默认是10
-  };
+  }
   constructor(props) {
     super(props);
     this.state = {
